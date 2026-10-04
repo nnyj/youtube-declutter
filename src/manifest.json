@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Declutter",
+  "version": "1.0.0",
+  "description": "Hide distracting parts of YouTube, each behind its own toggle.",
+  "minimum_chrome_version": "121",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "declarativeNetRequest"],
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "*://m.youtube.com/*",
+    "*://youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*", "*://youtube.com/*"],
+      "js": ["content/playlist_block.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*", "*://youtube.com/*"],
+      "js": [
+        "content/core.js",
+        "content/homepage.js",
+        "content/subscriptions.js",
+        "content/shorts.js",
+        "content/thumbnails.js",
+        "content/video_page.js",
+        "content/autoplay.js",
+        "content/search.js",
+        "content/guide_sidebar.js",
+        "content/nav_tabs.js",
+        "content/main.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-declutter@local",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

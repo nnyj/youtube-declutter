@@ -1,0 +1,56 @@
+// UI strings keyed by language. Add a language by adding a sibling of `en`.
+// Missing keys in another language fall back to `en`.
+const STRINGS = {
+  en: {
+    app_name: 'YouTube Declutter',
+    power_tooltip: 'Toggle Extension',
+    off_message: 'YouTube Declutter is off.',
+    feedback: 'Feedback',
+    version: 'v{version}',
+
+    group_homepage: 'Homepage',
+    group_subscriptions: 'Subscriptions Page',
+    group_shorts: 'YouTube Shorts',
+    group_thumbnails: 'Thumbnails',
+    group_video: 'Video Page',
+    group_search: 'Search Results',
+    group_sidebar: 'YouTube Sidebar',
+
+    hideFeed: 'Hide Homepage Feed',
+    redirectToSubs: 'Redirect to Subscriptions',
+    hideShortsHomepage: 'Hide Shorts in feeds',
+    hideExploreMoreTopics: 'Hide Explore More Topics',
+    cleanHomepageFeed: 'Clean Homepage Feed',
+    hideCommunityPosts: 'Hide Community Posts',
+    hideFeaturedContent: 'Hide Featured Content',
+    hideMembersOnly: 'Hide Members Only Content',
+    hidePlayables: 'Hide YouTube Playables',
+    hideMostRelevantSubscriptions: "Hide 'Most Relevant'",
+    hideSubsLiveStreams: 'Hide Live Streams',
+    hideShortsGlobally: 'Hide Shorts (All Pages)',
+    redirectShorts: 'Redirect Shorts',
+    hideVideoThumbnails: 'Hide Thumbnails',
+    hideSidebar: 'Hide Video Sidebar',
+    hideRecommended: 'Hide Recommended Videos',
+    hideSidebarShorts: 'Hide YouTube Shorts',
+    hidePlaylists: 'Hide Playlists',
+    hideComments: 'Hide Comments',
+    hideLiveChat: 'Hide Live Chat',
+    hideEndCards: 'Hide End Screen Cards',
+    disableAutoplay: 'Disable Autoplay',
+    disablePlaylistAutoplay: 'Disable for Playlist Videos',
+    disableRegularAutoplay: 'Disable for Regular Videos',
+    hideSearchRecommended: 'Hide Recommended Videos',
+    hideShortsSearch: 'Hide YouTube Shorts',
+    cleanSidebar: 'Clean Sidebar',
+    hideSubscriptions: 'Hide Subscriptions',
+    hideExplore: 'Hide Explore & Trending',
+    hideMoreFromYT: 'Hide More From YouTube',
+
+    thumbs_off: 'Disable',
+    thumbs_hidden: 'Hidden',
+    'thumbs_reveal-on-hover': 'Reveal on Hover',
+    'thumbs_solid-color': 'Solid Color',
+    thumbs_blurred: 'Blur'
+  }
+};
