@@ -1,0 +1,10 @@
+{
+  "categories": { "firefox": ["photos-music-videos"] },
+  "summary": { "en-US": "Hide YouTube Shorts, the home feed, recommendations, comments and other distractions, each behind its own toggle" },
+  "description": {
+    "en-US": "Turns YouTube into a focused video player. Every feature is off by default, enable only what you need from the popup.\n\n- Hide the homepage feed, optionally redirect to Subscriptions\n- Hide Shorts on every page, or open them in the regular player\n- Hide the video sidebar, comments, live chat and end screen cards\n- Disable autoplay, separately for playlists and regular videos\n- Hide search recommendations, Explore, Trending and More from YouTube\n- Hide, blur or reveal-on-hover thumbnails\n- One power button turns every rule off without a reload\n\nNo data collection, no network requests. Settings are stored in browser sync storage.\n\nSource code: https://github.com/nnyj/youtube-declutter"
+  },
+  "homepage": { "en-US": "https://github.com/nnyj/youtube-declutter" },
+  "support_url": { "en-US": "https://github.com/nnyj/youtube-declutter/issues" },
+  "version": { "license": "MIT" }
+}
